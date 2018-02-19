@@ -19,7 +19,7 @@ LaTeX写作采用MikTex2.9+TexnicCenter2.0
 
 3. 华盛顿杰弗逊学院的课件，包含练习题[http://www2.washjeff.edu/users/rhigginbottom/latex/lectures.html](http://www2.washjeff.edu/users/rhigginbottom/latex/lectures.html)
 
-4. [LaTeX](http://www.latexstudio.net/)的大量模板和技巧
+4. LaTeX的大量模板和技巧
 
    [http://www.latexstudio.net/](http://www.latexstudio.net/)
 
