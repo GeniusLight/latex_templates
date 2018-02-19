@@ -1,103 +1,103 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,UTF8]{ctexart}
 
-%%%%%%===== ºê°üµ÷ÓÃ =====
+%%%%%%===== å®åŒ…è°ƒç”¨ =====
 \usepackage{CJK,CJKnumb,CJKspace}
-\usepackage{graphicx}           % ²åÈëÍ¼Æ¬
-\usepackage{color}              % Ö§³Ö²ÊÉ«
-\usepackage{indentfirst}        % Ê×ĞĞËõ½øºê°ü
-\usepackage{amsmath,amssymb,bm} % AMS mathºê°üÓëÊıÑ§·ûºÅ¼Ó´Ö
-\usepackage{cases}              % ÊıÑ§¹«Ê½
+\usepackage{graphicx}           % æ’å…¥å›¾ç‰‡
+\usepackage{color}              % æ”¯æŒå½©è‰²
+\usepackage{indentfirst}        % é¦–è¡Œç¼©è¿›å®åŒ…
+\usepackage{amsmath,amssymb,bm} % AMS mathå®åŒ…ä¸æ•°å­¦ç¬¦å·åŠ ç²—
+\usepackage{cases}              % æ•°å­¦å…¬å¼
 \usepackage{amssymb}
-\usepackage{adjustbox}			%µ÷Õû±í¸ñ´óĞ¡
-\usepackage{cmap}				%½â¾öpdfÕ³ÌùÂÒÂë
-\usepackage{booktabs}			%»æÖÆÈıÏß±í
-\usepackage[CJKbookmarks=true, colorlinks=true]{hyperref}			%²åÈëÁ´½Ó
+\usepackage{adjustbox}			%è°ƒæ•´è¡¨æ ¼å¤§å°
+\usepackage{cmap}				%è§£å†³pdfç²˜è´´ä¹±ç 
+\usepackage{booktabs}			%ç»˜åˆ¶ä¸‰çº¿è¡¨
+\usepackage[CJKbookmarks=true, colorlinks=true]{hyperref}			%æ’å…¥é“¾æ¥
 
-%%%%%%===== ÖØ¶¨Òå×ÖÌåºÍ×ÖºÅ =====
-\newcommand{\song}{\CJKfamily{song}}    % ËÎÌå
-\newcommand{\fs}{\CJKfamily{fs}}        % ·ÂËÎÌå
-\newcommand{\kai}{\CJKfamily{kai}}      % ¿¬Ìå
-\newcommand{\hei}{\CJKfamily{hei}}      % ºÚÌå
-\newcommand{\li}{\CJKfamily{li}}        % Á¥Êé
-\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % ³õºÅ
-\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % Ğ¡³õºÅ
-\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % Ò»ºÅ
-\newcommand{\xiaoyihao}{\fontsize{24pt}{\baselineskip}\selectfont}  % Ğ¡Ò»ºÅ
-\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % ¶şºÅ
-\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % Ğ¡¶şºÅ
-\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}     % ÈıºÅ
-\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont} % Ğ¡ÈıºÅ
-\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % ËÄºÅ
-\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % Ğ¡ËÄºÅ
-\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % ÎåºÅ
-\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % Ğ¡ÎåºÅ
+%%%%%%===== é‡å®šä¹‰å­—ä½“å’Œå­—å· =====
+\newcommand{\song}{\CJKfamily{song}}    % å®‹ä½“
+\newcommand{\fs}{\CJKfamily{fs}}        % ä»¿å®‹ä½“
+\newcommand{\kai}{\CJKfamily{kai}}      % æ¥·ä½“
+\newcommand{\hei}{\CJKfamily{hei}}      % é»‘ä½“
+\newcommand{\li}{\CJKfamily{li}}        % éš¶ä¹¦
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % åˆå·
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % å°åˆå·
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % ä¸€å·
+\newcommand{\xiaoyihao}{\fontsize{24pt}{\baselineskip}\selectfont}  % å°ä¸€å·
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % äºŒå·
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % å°äºŒå·
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}     % ä¸‰å·
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont} % å°ä¸‰å·
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % å››å·
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % å°å››å·
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % äº”å·
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % å°äº”å·
 
-%%%%%%===== Ò³ÃæÉèÖÃ =====
-\setlength{\textwidth}{14.5cm}  % ÕıÎÄ¿í¶È
-\setlength{\textheight}{20cm}   % ÕıÎÄ¸ß¶È
-\setlength{\hoffset}{0cm}       % ×ó±ß¾à = \hoffset + 1 Ó¢´ç
-\setlength{\voffset}{0cm}       % ¶¥¶Ë¾àÀë = \voffset + 1 Ó¢´ç
-\setlength{\parskip}{3pt plus1pt minus1pt}  % ¶ÎÂäÖ®¼äµÄÊúÖ±¾àÀë
-\renewcommand{\baselinestretch}{1.2}    % ¶¨ÒåĞĞ¾à
-\setlength{\parindent}{0pt} %Ê×ĞĞ¶¥¸ñ
-%%%%%%===== ×Ô¶¨ÒåÃüÁî =====
+%%%%%%===== é¡µé¢è®¾ç½® =====
+\setlength{\textwidth}{14.5cm}  % æ­£æ–‡å®½åº¦
+\setlength{\textheight}{20cm}   % æ­£æ–‡é«˜åº¦
+\setlength{\hoffset}{0cm}       % å·¦è¾¹è· = \hoffset + 1 è‹±å¯¸
+\setlength{\voffset}{0cm}       % é¡¶ç«¯è·ç¦» = \voffset + 1 è‹±å¯¸
+\setlength{\parskip}{3pt plus1pt minus1pt}  % æ®µè½ä¹‹é—´çš„ç«–ç›´è·ç¦»
+\renewcommand{\baselinestretch}{1.2}    % å®šä¹‰è¡Œè·
+\setlength{\parindent}{0pt} %é¦–è¡Œé¡¶æ ¼
+%%%%%%===== è‡ªå®šä¹‰å‘½ä»¤ =====
 \numberwithin{equation}{section}
 
 \begin{document}
-\begin{CJK*}{GBK}{song}
+\song
 \CJKindent\CJKtilde
 
-%%%%%%===== Í¼Æ¬ÎÄ¼ş¼ĞÖ¸¶¨ =====
+%%%%%%===== å›¾ç‰‡æ–‡ä»¶å¤¹æŒ‡å®š =====
 \graphicspath{{figures/}}
 
-%%%%%%===== ±êÌâÃû³ÆÖĞÎÄ»¯ =====
-\renewcommand\abstractname{\hei Õª\ Òª}
-\renewcommand\refname{\hei ²Î¿¼ÎÄÏ×}
-\renewcommand\figurename{\hei Í¼}
-\renewcommand\tablename{\hei ±í}
-\newtheorem{definition}{\hei ¶¨Òå~}[section]
-\newtheorem{theorem}{\hei ¶¨Àí~}[section]
-\newtheorem{lemma}[theorem]{\hei ÒıÀí~}
-\newtheorem{corollary}[theorem]{\hei ÍÆÂÛ~}
-\newtheorem{proposition}[theorem]{\hei ÃüÌâ~}
+%%%%%%===== æ ‡é¢˜åç§°ä¸­æ–‡åŒ– =====
+\renewcommand\abstractname{\hei æ‘˜\ è¦}
+\renewcommand\refname{\hei å‚è€ƒæ–‡çŒ®}
+\renewcommand\figurename{\hei å›¾}
+\renewcommand\tablename{\hei è¡¨}
+\newtheorem{definition}{\hei å®šä¹‰~}[section]
+\newtheorem{theorem}{\hei å®šç†~}[section]
+\newtheorem{lemma}[theorem]{\hei å¼•ç†~}
+\newtheorem{corollary}[theorem]{\hei æ¨è®º~}
+\newtheorem{proposition}[theorem]{\hei å‘½é¢˜~}
 
-\title{Ò»ÖÖ½â¾ö³µÁ¾Â·¾¶ºÍ¿¨³µË¾»úµ÷¶ÈµÄ¾«È·½â·¨\thanks{Ô­ÂÛÎÄ\cite{test}}}
-\author{light\\Ñ§ºÅ~xxxxxx, ×¨Òµ}
-\date{2017~Äê~2~ÔÂ~7~ÈÕ}
+\title{ä¸€ç§è§£å†³è½¦è¾†è·¯å¾„å’Œå¡è½¦å¸æœºè°ƒåº¦çš„ç²¾ç¡®è§£æ³•\thanks{åŸè®ºæ–‡\cite{test}}}
+\author{light\\å­¦å·~xxxxxx, ä¸“ä¸š}
+\date{2017~å¹´~2~æœˆ~7~æ—¥}
 \maketitle 
 
-%Éú³ÉÄ¿Â¼£¬¿ÉÒÔÑ¡Ôñ²»Éú³É
+%ç”Ÿæˆç›®å½•ï¼Œå¯ä»¥é€‰æ‹©ä¸ç”Ÿæˆ
 \tableofcontents
 
 \begin{abstract}
-±¾ÂÛÎÄÑĞ¾¿µÄÊÇ¹ØÓÚ³µÁ¾Â·¾¶ºÍ¿¨³µË¾»úµ÷¶È£¨VRTDSP£©µÄÎÊÌâ¡£½¨Á¢ÁËÊÊÓÃÓÚ²»Í¬ÔËÊä¹æÔòÏÂµÄÄ£ĞÍ£¬²¢ÇÒÊ¹ÓÃ·ÖÖ§¶¨¼ÛËã·¨½øĞĞÇó½âºÍÖ¤Ã÷ÎÊÌâµÄ½âÊÇ·ñÎª×îÓÅ½â¡£ÆäÒâÒå²»½öÔÚÓÚÕâÊÇµÚÒ»¸ö½â¾öVRTDSP²¢ÇÒÖ¤Ã÷×îÓÅĞÔµÄËã·¨¶øÇÒÔËÓÃÑĞ¾¿³É¹ûÆ¯ÁÁµØ½â¾öÁËÊµ¼ÊÎÊÌâ¡£
+æœ¬è®ºæ–‡ç ”ç©¶çš„æ˜¯å…³äºè½¦è¾†è·¯å¾„å’Œå¡è½¦å¸æœºè°ƒåº¦ï¼ˆVRTDSPï¼‰çš„é—®é¢˜ã€‚å»ºç«‹äº†é€‚ç”¨äºä¸åŒè¿è¾“è§„åˆ™ä¸‹çš„æ¨¡å‹ï¼Œå¹¶ä¸”ä½¿ç”¨åˆ†æ”¯å®šä»·ç®—æ³•è¿›è¡Œæ±‚è§£å’Œè¯æ˜é—®é¢˜çš„è§£æ˜¯å¦ä¸ºæœ€ä¼˜è§£ã€‚å…¶æ„ä¹‰ä¸ä»…åœ¨äºè¿™æ˜¯ç¬¬ä¸€ä¸ªè§£å†³VRTDSPå¹¶ä¸”è¯æ˜æœ€ä¼˜æ€§çš„ç®—æ³•è€Œä¸”è¿ç”¨ç ”ç©¶æˆæœæ¼‚äº®åœ°è§£å†³äº†å®é™…é—®é¢˜ã€‚
 \end{abstract}
 
 
-\section{Ó¦ÓÃ±³¾°ÃèÊö}
+\section{åº”ç”¨èƒŒæ™¯æè¿°}
 \label{sec:background}
-¶ÔÓÚ³¤¾àÀëµÄÔËÊä£¬Èç¹û¿¨³µË¾»ú³¤Ê±¼ä¼İÊ»¶ø²»¶¨ÆÚ½øĞĞĞİÏ¢£¬¾Í»á²úÉúºÜ´ó·¢ÉúÊÂ¹ÊµÄ·çÏÕ¡£Òò´Ë£¬Õş¸®ÖÆ¶©ÁËÒ»ÏµÁĞµÄÕş²ßÀ´±£Ö¤¼İÊ»µÄ°²È«¡£ÒÔÃÀ¹úÕş¸®ÎªÀı£¬¼İÊ»Ô±ÔÚÃ»ÓĞÁ¬ĞøĞİÏ¢10Ğ¡Ê±Çé¿öÏÂ²»ÄÜÁ¬Ğø¼İÊ»11Ğ¡Ê±£»¼İÊ»Ô±ÔÚĞİÏ¢ºó²»ÄÜÁ¬Ğø¼İÊ»14Ğ¡Ê±£»¼İÊ»Ô±ÔÚÖÁÉÙĞİÏ¢30·ÖÖÓÇé¿öÏÂ²»ÄÜÁ¬Ğø¼İÊ»8Ğ¡Ê±£»break²»ÄÜÉÙÓÚ30·ÖÖÓ¡£
+å¯¹äºé•¿è·ç¦»çš„è¿è¾“ï¼Œå¦‚æœå¡è½¦å¸æœºé•¿æ—¶é—´é©¾é©¶è€Œä¸å®šæœŸè¿›è¡Œä¼‘æ¯ï¼Œå°±ä¼šäº§ç”Ÿå¾ˆå¤§å‘ç”Ÿäº‹æ•…çš„é£é™©ã€‚å› æ­¤ï¼Œæ”¿åºœåˆ¶è®¢äº†ä¸€ç³»åˆ—çš„æ”¿ç­–æ¥ä¿è¯é©¾é©¶çš„å®‰å…¨ã€‚ä»¥ç¾å›½æ”¿åºœä¸ºä¾‹ï¼Œé©¾é©¶å‘˜åœ¨æ²¡æœ‰è¿ç»­ä¼‘æ¯10å°æ—¶æƒ…å†µä¸‹ä¸èƒ½è¿ç»­é©¾é©¶11å°æ—¶ï¼›é©¾é©¶å‘˜åœ¨ä¼‘æ¯åä¸èƒ½è¿ç»­é©¾é©¶14å°æ—¶ï¼›é©¾é©¶å‘˜åœ¨è‡³å°‘ä¼‘æ¯30åˆ†é’Ÿæƒ…å†µä¸‹ä¸èƒ½è¿ç»­é©¾é©¶8å°æ—¶ï¼›breakä¸èƒ½å°‘äº30åˆ†é’Ÿã€‚
 	
-ÔÚÕâÒ»ÏµÁĞÏŞÖÆÏÂÃæ£¬ÔËÊä¹«Ë¾ÆÚÍû¹æ»®×îÓÅµÄÂ·¾¶£¬ÒÔ¼õĞ¡ÔËÊäµÄ³É±¾¡£ÓÉÓÚÃÀ¹úÖÆ¶¨µÄĞÂÔËÊä¹æ¶¨£¬ÒÔÇ°µÄÒ»Ğ©½â·¨²»ÔÚÕâĞ©Ô¼ÊøÌõ¼şÏÂ¹æ»®Â·¾¶£¬ËùÒÔ²»ÊÊÓÃĞÂÔËÊä¹æ¶¨ÏÂµÄÂ·¾¶¹æ»®¡£¶øÇÒÄ¿Ç°²¢Ã»ÓĞÒ»ÖÖÔÚÒÔÉÏÎÊÌâ±³¾°ÏÂµÄ¾«È·½â·¨¡£ÎÄÕÂÌá³öÁËÒ»ÖÖ¸ßĞ§µÄ±êÇ©Ëã·¨£¬²¢ÇÒ½¨Ä£Ö¤Ã÷ÁËÆä¿ÉĞĞĞÔ£¬Ê¹ÓÃ·ÖÖ§¶¨¼ÛµÄ·½·¨½øĞĞÇó½â¡£
+åœ¨è¿™ä¸€ç³»åˆ—é™åˆ¶ä¸‹é¢ï¼Œè¿è¾“å…¬å¸æœŸæœ›è§„åˆ’æœ€ä¼˜çš„è·¯å¾„ï¼Œä»¥å‡å°è¿è¾“çš„æˆæœ¬ã€‚ç”±äºç¾å›½åˆ¶å®šçš„æ–°è¿è¾“è§„å®šï¼Œä»¥å‰çš„ä¸€äº›è§£æ³•ä¸åœ¨è¿™äº›çº¦æŸæ¡ä»¶ä¸‹è§„åˆ’è·¯å¾„ï¼Œæ‰€ä»¥ä¸é€‚ç”¨æ–°è¿è¾“è§„å®šä¸‹çš„è·¯å¾„è§„åˆ’ã€‚è€Œä¸”ç›®å‰å¹¶æ²¡æœ‰ä¸€ç§åœ¨ä»¥ä¸Šé—®é¢˜èƒŒæ™¯ä¸‹çš„ç²¾ç¡®è§£æ³•ã€‚æ–‡ç« æå‡ºäº†ä¸€ç§é«˜æ•ˆçš„æ ‡ç­¾ç®—æ³•ï¼Œå¹¶ä¸”å»ºæ¨¡è¯æ˜äº†å…¶å¯è¡Œæ€§ï¼Œä½¿ç”¨åˆ†æ”¯å®šä»·çš„æ–¹æ³•è¿›è¡Œæ±‚è§£ã€‚
 
-\subsection{ÊıÑ§½¨Ä£ÃèÊö}
+\subsection{æ•°å­¦å»ºæ¨¡æè¿°}
 \label{sec:math_model}
-VRTDSP¿ÉÒÔ×ª»¯Îª´øÊ±¼ä´°µÄ³µÁ¾Â·¾¶¹æ»®ÎÊÌâ£¨VRPTW£©¡£Ä£ĞÍ±äÁ¿ÈçÏÂ
+VRTDSPå¯ä»¥è½¬åŒ–ä¸ºå¸¦æ—¶é—´çª—çš„è½¦è¾†è·¯å¾„è§„åˆ’é—®é¢˜ï¼ˆVRPTWï¼‰ã€‚æ¨¡å‹å˜é‡å¦‚ä¸‹
 \begin{itemize}
-	\item $C$~:~¹Ë¿Í¼¯ºÏ
-	\item $n^{depot}$~:~²Ö¿âµÄ¼¯ºÏ
-	\item $N=C\cup n^{depot}$~:~¿¨³µ¿ÉÒÔ¾­¹ıµÄ½Úµã
-	\item $\left[t_{n}^{min}, t_{n}^{max}\right]$~:~¾­¹ı½Úµã$n$µÄÊ±¼ä´°£¬ÆäÖĞ$n\in C$
-	\item $q_n$~:~½Úµã$n$µÄ»õÎïĞèÇó
-	\item $s_n$~:~½Úµã$n$µÄ·şÎñÊ±¼ä
-	\item $c_{nm}$~:~ÔËÊä³É±¾£¬ÆäÖĞ$\left(n,m\right) \in A $
-	\item $d_{nm}$~:~ÔËÊäÊ±¼ä£¬ÆäÖĞ$\left(n,m\right) \in A $
-	\item $Q$~:~¿¨³µµÄÔËÊä»õÎïÈİÁ¿£¬¼ÙÉèÃ¿Á¾¿¨³µÈİÁ¿ÏàÍ¬
-	\item $r=\left(n_0,n_1,\ldots,n_{k-1},n_k\right)$~:~ÔËÊäµÄÂ·Ïß
-	\item $G=\left(N,A\right)$~:~ÔËÊäµÄÍøÂç
+	\item $C$~:~é¡¾å®¢é›†åˆ
+	\item $n^{depot}$~:~ä»“åº“çš„é›†åˆ
+	\item $N=C\cup n^{depot}$~:~å¡è½¦å¯ä»¥ç»è¿‡çš„èŠ‚ç‚¹
+	\item $\left[t_{n}^{min}, t_{n}^{max}\right]$~:~ç»è¿‡èŠ‚ç‚¹$n$çš„æ—¶é—´çª—ï¼Œå…¶ä¸­$n\in C$
+	\item $q_n$~:~èŠ‚ç‚¹$n$çš„è´§ç‰©éœ€æ±‚
+	\item $s_n$~:~èŠ‚ç‚¹$n$çš„æœåŠ¡æ—¶é—´
+	\item $c_{nm}$~:~è¿è¾“æˆæœ¬ï¼Œå…¶ä¸­$\left(n,m\right) \in A $
+	\item $d_{nm}$~:~è¿è¾“æ—¶é—´ï¼Œå…¶ä¸­$\left(n,m\right) \in A $
+	\item $Q$~:~å¡è½¦çš„è¿è¾“è´§ç‰©å®¹é‡ï¼Œå‡è®¾æ¯è¾†å¡è½¦å®¹é‡ç›¸åŒ
+	\item $r=\left(n_0,n_1,\ldots,n_{k-1},n_k\right)$~:~è¿è¾“çš„è·¯çº¿
+	\item $G=\left(N,A\right)$~:~è¿è¾“çš„ç½‘ç»œ
 \end{itemize}
 
-¹æ»®µÄÎÊÌâ\ref{eq:target}£º
+è§„åˆ’çš„é—®é¢˜\ref{eq:target}ï¼š
 \begin{subequations}
 \begin{align}
 	\min &\sum_{r\in R}{c_r \times x_r} \\
@@ -107,24 +107,23 @@ VRTDSP¿ÉÒÔ×ª»¯Îª´øÊ±¼ä´°µÄ³µÁ¾Â·¾¶¹æ»®ÎÊÌâ£¨VRPTW£©¡£Ä£ĞÍ±äÁ¿ÈçÏÂ
 \label{eq:target}
 \end{subequations}
 
-ÆäÖĞ$R$ÊÇ¿ÉĞĞÂ·¾¶¼¯ºÏ,$r\in R$¡£ÊÜµ½±íxÔËÊäÕş²ßµÄÔ¼Êø...
+å…¶ä¸­$R$æ˜¯å¯è¡Œè·¯å¾„é›†åˆ,$r\in R$ã€‚å—åˆ°è¡¨xè¿è¾“æ”¿ç­–çš„çº¦æŸ...
 
 
-Á÷³ÌÈçÍ¼\ref{fig:Branch_and_price_diagram}
+æµç¨‹å¦‚å›¾\ref{fig:Branch_and_price_diagram}
 
 \begin{figure}[hbt]
 	\centering
 	\includegraphics[width=0.6\textwidth]{branch_and_price_diagram}
-	\caption{·ÖÖ§¶¨¼Û·¨Á÷³ÌÍ¼}
+	\caption{åˆ†æ”¯å®šä»·æ³•æµç¨‹å›¾}
 	\label{fig:Branch_and_price_diagram}
 \end{figure}
 
 
-% ²Î¿¼ÎÄÏ×
+% å‚è€ƒæ–‡çŒ®
 \clearpage
 \bibliographystyle{IEEEtran}
 \bibliography{citation}
 
 \clearpage
-\end{CJK*}
 \end{document}
